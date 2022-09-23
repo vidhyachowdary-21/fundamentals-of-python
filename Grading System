@@ -1,0 +1,51 @@
+The newly appointed Vice Chancellor of Anna University wanted to create a automated grading system for the students to check their grade. When a student enter a mark, the grading system displays the corresponding grade.
+
+Write a program to solve the given problem.
+
+ Marks scored            Grade
+100                      S
+(90,100)                 A
+(80,90)                  B
+(70,80)                  C
+(60,70)                  D
+(50,60)                  E
+<50                      F
+
+The interval [a,b) includes all numbers greater than or equal to a and less than b.
+
+Input and Output Format:
+Input consists of a single integer which corresponds to the marks scored by the student. Print Invalid Input if it is not in the range 0 to 100.
+Refer sample input and output for formatting specifications.
+
+Sample Input 1:
+85
+
+Sample Output 1:
+B
+
+Sample Input 2:
+850
+
+Sample Output 2
+Invalid Input
+
+program:
+i=int(input())
+i>=0 and i<=100
+if(i==100):
+    print("S")
+elif(i>=90 and i<100):
+    print("A")
+elif(i>=80 and i<90):
+    print("B")
+elif(i>=70 and i<80):
+    print("C")
+elif(i>=60 and i<70):
+    print("D")
+elif(i>=50 and i<60):
+    print("E")
+elif(i<50):
+    print("F")
+else:
+    print("Invalid Input")
+
