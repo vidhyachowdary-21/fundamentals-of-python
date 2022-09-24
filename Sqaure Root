@@ -7,3 +7,9 @@ Output consists of a square of a number
 Sample Input & Output:
 5
 25
+
+program:
+def fun(n):
+    return(n*n)
+n=int(input())
+print(fun(n))
